@@ -47,7 +47,6 @@ body {
 				position: absolute;
 				right: 0; bottom: @g1*2.4;
 				nav {
-					position: relative;
 					width: @g1*15;
 					background: @bodyGrey url(../images/home-body.png);
 					a {
@@ -74,8 +73,14 @@ body {
 					height: @g1*2;
 					.drop-shadow(@y-axis: @g1*.5, @blur: @g1*.5);
 					background: @bodyGrey url(../images/home-body.png);
+					> div {
+						width: @pageW;
+						.center();
+						position: relative;		
+					}
 					nav {
-						left: @pageW + @g1*7;
+					 	position: absolute;
+						right: @textMargin*-1.5;
 						padding-right: @textMargin*1.5;
 						border-bottom: @g1*.1 solid darkGrey;
 						.rounded(@g1*2);
