@@ -1,0 +1,23 @@
+Options -Indexes  
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+ErrorDocument 403 /403.html
+ErrorDocument 404 /404.html
+
+# Filter out system pieces
+RewriteRule _(.*) /403.html [R,L]
+
+
+# Web interface
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^resume$ /resume.php [L]
+RewriteRule ^$ /index.php [L]
+
+# Catchall redirect to index
+# RewriteCond %{REQUEST_FILENAME} !^index
+# RewriteRule (.*) index.php [L]
+
+</IfModule>
