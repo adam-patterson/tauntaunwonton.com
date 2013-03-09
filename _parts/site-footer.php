@@ -3,11 +3,13 @@
 		// TODO: other globals?
 		window.TTWT = { 
 			globals : {
-				mongoService: '<?= MONGO ?>'
+				mongoService: 	'<?= MONGO ?>',
+				mongoPageBase: 	'<?= MONGO_PAGES ?>',
+				mongoAPIKey: 	'<?= MONGO_APIKEY ?>'
 			}
 		};
 		
-		$.getScript('/resources/js/app.min.js', function () {
+		$.getScript('/resources/js/app<?php echo DEBUG ? '' : '.min' ?>.js', function () {
 			window.TTWT.app.init();
 		});
 	</script>

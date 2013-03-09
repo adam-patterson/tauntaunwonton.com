@@ -18,6 +18,8 @@
 		},
 		// Hook the pinning of the nav when it is scrolled off page.
 		hookFixedNav: function () {
+		
+			if ($('body > header div.fixation').length === 0) return;
 		 
 			var nav = $('body > header div.fixation'),
 			top = nav.offset().top - parseFloat(nav.css('marginTop').replace(/auto/, 0));
