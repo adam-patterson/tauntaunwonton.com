@@ -4,7 +4,7 @@
 <div class="page resume"></div>
 <script type="application/javascript">
 	$.getScript('/resources/js/resume<?php echo DEBUG ? '' : '.min' ?>.js', function () {
-		window.TTWT.resume.init();
+		window.TTWT.resume.init('<?= $MONGO_IDS['resume'] ?>');
 	});
 </script>
 <?php

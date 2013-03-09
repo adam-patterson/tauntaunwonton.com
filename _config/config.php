@@ -11,4 +11,8 @@ if (!defined('MONGO')) define('MONGO', 'https://api.mongolab.com/api/1/databases
 if (!defined('MONGO_PAGES')) define('MONGO_PAGES', '/pages');
 if (!defined('MONGO_APIKEY')) define('MONGO_APIKEY', 'apiKey=2-ue_AxSTtbETF3cZeQEyNEMPISGqbSL');
 
+// Mapping to resource IDs in Mongo
+global $MONGO_IDS;
+$MONGO_IDS['resume']	= '/513a9f36e4b0f3a3623dfbbe';
+
 ?>
