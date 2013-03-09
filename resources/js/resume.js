@@ -10,8 +10,6 @@
 			var	uri = window.TTWT.globals.mongoService +
 						window.TTWT.globals.mongoPageBase +
 						'?' + window.TTWT.globals.mongoAPIKey;
-						
-						console.log(uri);
 			
 			// Get the resume and stick it in the page.
 			$.get(uri, function(data) {

@@ -3,6 +3,7 @@
 		// TODO: other globals?
 		window.TTWT = { 
 			globals : {
+				debug:			'<?= DEBUG ?>',
 				mongoService: 	'<?= MONGO ?>',
 				mongoPageBase: 	'<?= MONGO_PAGES ?>',
 				mongoAPIKey: 	'<?= MONGO_APIKEY ?>'
