@@ -1,3 +1,6 @@
 [submodule "lib/epic-editor"]
 	path = lib/epic-editor
 	url = https://github.com/OscarGodson/EpicEditor.git
+[submodule "lib/elements"]
+	path = lib/elements
+	url = https://github.com/dmitryf/elements.git
