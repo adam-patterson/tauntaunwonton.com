@@ -4,3 +4,6 @@
 [submodule "lib/elements"]
 	path = lib/elements
 	url = https://github.com/dmitryf/elements.git
+[submodule "lib/marked"]
+	path = lib/marked
+	url = https://github.com/chjj/marked.git

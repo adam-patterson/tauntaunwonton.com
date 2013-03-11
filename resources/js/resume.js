@@ -14,12 +14,22 @@
 			// Get the resume and stick it in the page.
 			$.get(uri, function(data) {
 			
-				if (typeof data === 'undefined') {
+				if (typeof data === 'undefined' || typeof data.md === 'undefined') {
 					// TODO: 404 message
 					console.log('Error: no data returned from mongo');
 				}
+				
+				window.marked.setOptions({
+					gfm: true,
+					tables: true,
+					breaks: false,
+					pedantic: false,
+					sanitize: true,
+					smartLists: true,
+					langPrefix: 'language-'
+				});
 					
-				$('div.resume').append('<h1>'+data.title+'</h1>');
+				$('div.resume').append(window.marked(data.md));
 			});
 			
 			return true;

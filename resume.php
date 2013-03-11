@@ -7,7 +7,7 @@
 		window.TTWT.resume.init('<?= $MONGO_IDS['resume'] ?>');
 	});
 </script>
-<script type="application/javascript" src="/lib/epic-editor/epiceditor/js/epiceditor.min.js"></script>
+<script type="application/javascript" src="/lib/marked/lib/marked.js"></script>
 <?php
 	require_once('_parts/site-footer.php');
 ?>

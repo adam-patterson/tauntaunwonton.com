@@ -1,6 +1,6 @@
 <header>
 	<div>
-		<h1><a href="/">tauntaunwonton</a><em>Comfort food for your browser</em></h1>
+		<h1><a href="/">tauntaun<i>wonton</i></a><em>Comfort food for your browser</em></h1>
 		<div class="fixation">
 			<div>
 				<nav>
