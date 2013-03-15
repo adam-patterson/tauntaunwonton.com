@@ -1,5 +1,6 @@
 <?php
 	require_once('_config/config.php');
+	$page = substr($_SERVER['REQUEST_URI'], 1);
 ?>
 <!doctype html>
 <html lang=en>
@@ -32,6 +33,8 @@
 		<!-- Tauntaun specifics -->
 		<link href="/resources/styles/chrome.css" rel="stylesheet" type="text/css">
 		<link href="/resources/styles/main.css" rel="stylesheet" type="text/css">
+		<!-- Page specific -->
+		<link href="/resources/styles/<?= $page; ?>.css" rel="stylesheet" type="text/css">
 
 		<!-- Pull in jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="application/javascript"></script>
