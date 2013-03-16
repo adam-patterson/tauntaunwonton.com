@@ -5,7 +5,7 @@
 			<div>
 				<nav>
 					<a href="/">main</a>
-					<a href="/resume">resume</a>
+					<a href="/resume">resum&eacute;</a>
 				</nav>
 			</div>
 		</div>

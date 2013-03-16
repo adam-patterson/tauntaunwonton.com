@@ -3,10 +3,54 @@
 @import "../../lib/elements/elements.less";
 
 .resume {
-	width: @pageW;
+	width: .75*@pageW;
 	margin-left: auto;
 	margin-right: auto;
+	font-family: 'Open Sans', sans-serif;
+	a {
+		text-shadow: none;
+		color: @midGrey;
+	}
+	em {
+		font-style: normal;
+		font-size: smaller;
+		font-weight: 100;
+		color: @midGrey;
+	}
+	ul {
+		> li {
+			list-style: none;
+			&:before {
+				content: "\f105";
+				position: relative;
+				left: -1*@g1;
+				font-family: FontAwesome;
+			}
+		}
+	}
+	h1, h3 {
+		font-weight: 100;
+	}
 	h1 {
-		font-size: 5em;
+		font-size: 4em;
+		text-align: center;
+	}
+	> blockquote {
+		> p {
+			text-align: center;
+			color: @midGrey;
+		}
+	}
+	> h2 {
+		font-weight: 400;
+		margin: 1em 0 .8em 0;
+	}
+	> h3 {
+		padding-bottom: .5*@g1;
+		border-bottom: @midGrey solid .1*@g1;
+		> em {
+			float: right;
+			font-variant: small-caps;
+		}
 	}
 }

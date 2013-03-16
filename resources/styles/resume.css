@@ -1,1 +1,8 @@
-.resume{width:1000px;margin-left:auto;margin-right:auto;}.resume h1{font-size:5em;}
+.resume{width:750px;margin-left:auto;margin-right:auto;font-family:'Open Sans',sans-serif;}.resume a{text-shadow:none;color:#909090;}
+.resume em{font-style:normal;font-size:smaller;font-weight:100;color:#909090;}
+.resume ul>li{list-style:none;}.resume ul>li:before{content:"\f105";position:relative;left:-10px;font-family:FontAwesome;}
+.resume h1,.resume h3{font-weight:100;}
+.resume h1{font-size:4em;text-align:center;}
+.resume>blockquote>p{text-align:center;color:#909090;}
+.resume>h2{font-weight:400;margin:1em 0 .8em 0;}
+.resume>h3{padding-bottom:5px;border-bottom:#909090 solid 1px;}.resume>h3>em{float:right;font-variant:small-caps;}
