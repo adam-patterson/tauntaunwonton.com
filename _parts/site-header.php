@@ -40,6 +40,7 @@
 
 		<!-- Pull in jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="application/javascript"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js" type="application/javascript"></script>
 	
 		<!-- Tag for browser/feature specificity -->
 		<script type="application/javascript">
