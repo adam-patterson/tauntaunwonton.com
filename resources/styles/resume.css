@@ -1,6 +1,7 @@
 .resume{width:750px;margin-left:auto;margin-right:auto;font-family:'Open Sans',sans-serif;display:none;}.resume a{text-shadow:none;color:#009092;}.resume a:hover,.resume a:active,.resume a.hl{color:#009092;text-shadow:0 1px 3px rgba(173, 133, 133, 0.75);}
 .resume em{font-style:normal;font-weight:100;color:#909090;}
 .resume ul>li{list-style:none;}.resume ul>li:before{content:"\f105";position:relative;left:-10px;font-family:FontAwesome;}
+.resume ol{margin:0;padding:.5em;}.resume ol>li{list-style:none;margin-bottom:.5em;}.resume ol>li>strong{display:block;position:relative;left:-0.5em;}
 .resume h1,.resume h3{font-weight:100;}
 .resume h1{font-size:4em;text-align:center;}
 .resume>blockquote>p{text-align:center;color:#909090;}

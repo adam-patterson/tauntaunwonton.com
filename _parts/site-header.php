@@ -1,6 +1,7 @@
 <?php
 	require_once('_config/config.php');
 	$page = substr($_SERVER['REQUEST_URI'], 1);
+	$page = empty($page) ? 'index' : $page;
 ?>
 <!doctype html>
 <html lang=en>

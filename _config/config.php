@@ -14,5 +14,6 @@ if (!defined('MONGO_APIKEY')) define('MONGO_APIKEY', 'apiKey=2-ue_AxSTtbETF3cZeQ
 // Mapping to resource IDs in Mongo
 global $MONGO_IDS;
 $MONGO_IDS['resume']	= '/513a9f36e4b0f3a3623dfbbe';
+$MONGO_IDS['projects']	= '/51575bc9e4b0176eaa58058d';
 
 ?>

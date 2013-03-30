@@ -3,21 +3,18 @@
 
 	/** TauntaunWonton v0.1
 		
-		Functionality specific to the resume page.
+		Functionality for displaying a list of projects.
 	*/
-	var resume = {
+	var projects = {
 		init: function(resource_id) {
 			var	uri = window.TTWT.globals.mongoService +
 						window.TTWT.globals.mongoPageBase +
 						resource_id + '?' + window.TTWT.globals.mongoAPIKey;
 
-			$('header>div').not('.fixation').switchClass('', 'hidden', 250);
-			$('.fixation').addClass('pinned');
-
 			// Get the resume and stick it in the page.
 			$.get(uri, function(data) {
-
-				if (typeof data === 'undefined' || typeof data.md === 'undefined') {
+console.log(data);
+				if (typeof data === 'undefined' || typeof data.projects === 'undefined') {
 					// TODO: 404 message
 					console.log('Error: no data returned from mongo');
 				}
@@ -32,14 +29,14 @@
 					langPrefix: 'language-'
 				});
 
-				$('div.resume').append(window.marked(data.md)).fadeIn(400);
+				$('div.projects').append(window.marked(data.projects)).fadeIn(400);
 			});
 
 			return true;
 		}
 	};
 
-	window.TTWT.resume = resume;
+	window.TTWT.projects = projects;
 
 
 }(this.window || this));
