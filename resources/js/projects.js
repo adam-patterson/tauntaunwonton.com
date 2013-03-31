@@ -22,25 +22,28 @@
 				if (data.projects.length === 0)
 					console.log('Projects list is empty.');
 
+				window.marked.setOptions({
+					gfm: true,
+					tables: true,
+					breaks: false,
+					pedantic: false,
+					sanitize: true,
+					smartLists: true,
+					langPrefix: 'language-'
+				});
+
 				$(data.projects).each(function (i, o) {
-					var p = $('<article><title></title><p class="desc"></p></article>');
+					var p = $('<article><title></title><div class="pic"></div><p class="desc"></p></article>'),
+						img = '<img src="'+ o.img.src +'" alt="'+ o.img.alt +'">';
 
-					window.marked.setOptions({
-						gfm: true,
-						tables: true,
-						breaks: false,
-						pedantic: false,
-						sanitize: true,
-						smartLists: true,
-						langPrefix: 'language-'
-					});
-
+console.log(img);
 					p.find('title').append(o.name);
 					p.attr('rel', o.link);
+					p.find('div.pic').append(img);
 					if (typeof o.desc !== 'undefined' && o.desc.length > 0) p.find('p.desc').append(window.marked(o.desc));
 					$('div.projects').append(p);
 				});
-
+				
 				$('div.projects').on('mouseenter', 'article', function () {
 					$(this).addClass('hl');
 				}).on('mouseleave', 'article', function () {
