@@ -48,6 +48,7 @@
 				}).on('mouseleave', 'article', function () {
 					$(this).removeClass('hl');
 				}).on('click', 'article', function () {
+					$(this).removeClass('hl');
 					window.open($(this).attr('rel'), '_blank');
 				}).fadeIn(400);
 			});
