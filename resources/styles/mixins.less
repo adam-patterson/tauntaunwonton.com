@@ -2,3 +2,8 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+.shaded-inner-shadow(@horizontal:0, @vertical:1px, @blur:2px, @rgba: rgba(0, 0, 0, 0.25)) {
+  -webkit-box-shadow: inset @horizontal @vertical @blur @rgba;
+  -moz-box-shadow: inset @horizontal @vertical @blur @rgba;
+  box-shadow: inset @horizontal @vertical @blur @rgba;
+}

@@ -14,5 +14,6 @@
 			window.TTWT.app.init();
 		});
 	</script>
+	<script type="application/javascript" src="/lib/marked/lib/marked.js"></script>
 	</body>
 </html>

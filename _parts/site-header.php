@@ -28,7 +28,7 @@
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" type="text/css">
 		<link href="http://fonts.googleapis.com/css?family=Merriweather:400,900" rel="stylesheet" type="text/css">
 		<link href="http://fonts.googleapis.com/css?family=Vollkorn:400italic,400" rel="stylesheet" type="text/css">
-		<link href="http://fonts.googleapis.com/css?family=Lato:100,900" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Lato:100,400,900" rel="stylesheet" type="text/css">
 		
 		<!-- Font Awesome -->
 		<link href="/resources/styles/font-awesome.min.css" rel="stylesheet" type="text/css">
