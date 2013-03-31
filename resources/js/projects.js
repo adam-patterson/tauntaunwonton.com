@@ -36,15 +36,14 @@
 					var p = $('<article><title></title><div class="pic"></div><p class="desc"></p></article>'),
 						img = '<img src="'+ o.img.src +'" alt="'+ o.img.alt +'">';
 
-console.log(img);
 					p.find('title').append(o.name);
 					p.attr('rel', o.link);
 					p.find('div.pic').append(img);
 					if (typeof o.desc !== 'undefined' && o.desc.length > 0) p.find('p.desc').append(window.marked(o.desc));
-					$('div.projects').append(p);
+					$('section.projects').append(p);
 				});
-				
-				$('div.projects').on('mouseenter', 'article', function () {
+
+				$('section.projects').on('mouseenter', 'article', function () {
 					$(this).addClass('hl');
 				}).on('mouseleave', 'article', function () {
 					$(this).removeClass('hl');

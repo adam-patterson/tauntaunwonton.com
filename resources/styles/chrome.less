@@ -22,7 +22,7 @@ body {
 		margin: 0; padding: 0; width: 100%;
 	}
 	a {
-		text-shadow:  0 @g1*.1 @g1*.1 rgba(0, 0, 0, 0.25);
+		text-shadow: 0 @g1*.1 @g1*.1 rgba(0, 0, 0, 0.25);
 		.transition();
 		color: @midGrey;
 		&:hover, &:active, &.hl {
@@ -32,6 +32,13 @@ body {
 			text-shadow:  0 @g1*-.1 @g1*.1 rgba(0, 0, 0, 0.75);
 		}
 		
+	}
+	h2 {
+		color: @midGrey;
+		font-family: 'Lato', sans-serif;
+		font-weight: normal;
+		margin: 1em 0 .8em 0;
+		text-transform: uppercase;
 	}
 	> header {
 		font: normal 1em/130% 'Open sans', Helvetica, Arial, sans-serif;
@@ -45,7 +52,7 @@ body {
 			h1 {
 				line-height: @gridMajor;
 				text-shadow: 0 @g1*.1 @g1*.3 rgba(0, 0, 0, 0.75);
-				font-size: @hugeText;
+				font-size: @massiveText;
 				a {	
 					color: FloralWhite;
 					i {
