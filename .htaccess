@@ -1,4 +1,6 @@
-Options -Indexes  
+Options -Indexes
+Options +FollowSymlinks
+Options -MultiViews   
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -13,8 +15,8 @@ RewriteRule _(.*) /403.html [R,L]
 
 # Web interface
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^resume$ /resume.php [L]
-RewriteRule ^$ /index.php [L]
+RewriteRule ^/?resume$ /resume.php [L]
+RewriteRule ^/?$ /index.php [L]
 
 # Catchall redirect to index
 # RewriteCond %{REQUEST_FILENAME} !^index
