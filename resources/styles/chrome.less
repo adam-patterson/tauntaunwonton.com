@@ -126,4 +126,30 @@ body {
 			.center();
 		}
 	}
+	.browserAssKicker {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background-color: @greyBlack;
+		top: 0; left: 0;
+		z-index: 99999;
+		> div {
+			width: 80%;
+			.center();
+			margin-top: @g1*5;
+			text-align: center;
+			> i.icon-lock {
+				display: block;
+				font-size: @massiveText*10;
+				line-height: 80%;
+			}
+			p.mock {
+				font-size: @hugeText;
+				font-weight: bold;
+			}
+			a:hover, a:active, a.hl {
+				color: MistyRose;
+			}
+		}
+	}
 }
