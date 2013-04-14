@@ -6,7 +6,7 @@
 	<p>This is where I get to play. It's a showcase for past projects and a sandbox for experimentation. I've provided a <a href="/resume">resum&eacute;</a> for those that are interested in such things. In the future a blog will be added (custom built 'cause that's how I roll) and, if I get around to it, likely some other stuff.</p>
 	<section class="projects"><h2>Projects</h2></section>
 </div>
-<script type="application/javascript">
+<script type="text/javascript">
 	$.getScript('/resources/js/projects<?php echo DEBUG ? '' : '.min' ?>.js', function () {
 		window.TTWT.projects.init('<?= $MONGO_IDS['projects'] ?>');
 	});
