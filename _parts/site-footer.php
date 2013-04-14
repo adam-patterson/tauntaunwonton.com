@@ -1,4 +1,4 @@
-	<script type="application/javascript">
+	<script type="text/javascript">
 		
 		// TODO: other globals?
 		window.TTWT = { 
@@ -14,6 +14,6 @@
 			window.TTWT.app.init();
 		});
 	</script>
-	<script type="application/javascript" src="/lib/marked/lib/marked.js"></script>
+	<script type="text/javascript" src="/lib/marked/lib/marked.js"></script>
 	</body>
 </html>
