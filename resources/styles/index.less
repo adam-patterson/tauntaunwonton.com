@@ -34,6 +34,7 @@
 		/* .shaded-inner-shadow(0, 0, @g1, rgba(150, 165, 175, .75)); */
 		font-family: 'Open sans', sans-serif;
 		cursor: pointer;
+		.transition(0.1s);
 		&:after {
 			content: " ";
 			position: relative;
@@ -55,7 +56,8 @@
 			.gradient(@color: FloralWhite, @start: LavenderBlush, @stop: FloralWhite);
 			.transition(@duration:0.1s, @ease:ease-out);
 			&:after {
-				display: none;
+				opacity: 0;
+				.transition(0.1s);
 			}
 		}
 		title {
