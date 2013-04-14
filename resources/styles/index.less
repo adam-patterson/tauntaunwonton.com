@@ -29,8 +29,9 @@
 		overflow: hidden;
 		.rounded(@g1*1.5);
 		display: inline-block;
-		border: 1px solid @mutedGrey;
-		.shaded-inner-shadow(0, 0, @g1, rgba(150, 165, 175, .75));
+		border: 1px solid #c5c5c5;
+		/* Breaks transitions. */
+		/* .shaded-inner-shadow(0, 0, @g1, rgba(150, 165, 175, .75)); */
 		font-family: 'Open sans', sans-serif;
 		cursor: pointer;
 		&:after {
@@ -48,9 +49,11 @@
 			margin-right: 0;
 		}
 		&.hl {
-			.shaded-inner-shadow(0, 0, 0, rgba(150, 165, 175, 0));
-			.drop-shadow(0, @g1*2, @g1*2, 0.35);
+			/* Breaks transitions. */
+			/* .shaded-inner-shadow(0, 0, 0, rgba(150, 165, 175, 0)); */
+			.drop-shadow(0, 0, @g1*3, 0.35);
 			.gradient(@color: FloralWhite, @start: LavenderBlush, @stop: FloralWhite);
+			.transition(@duration:0.1s, @ease:ease-out);
 			&:after {
 				display: none;
 			}
