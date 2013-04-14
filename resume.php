@@ -3,7 +3,7 @@
 	require_once('_parts/page-header.php');
 ?>
 <div class="page resume"></div>
-<script type="application/javascript">
+<script type="text/javascript">
 	$.getScript('/resources/js/resume<?php echo DEBUG ? '' : '.min' ?>.js', function () {
 		window.TTWT.resume.init('<?= $MONGO_IDS['resume'] ?>');
 	});
